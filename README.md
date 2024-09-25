@@ -133,6 +133,35 @@ Before running the application, make sure you have the following installed on yo
   }
 ]
 ```
+
+### Update a Task
+
+- **URL**: `/api/tasks/:id`
+- **Method**: `PUT`
+
+
+#### Request Body:
+```json
+{
+  {
+  "title": "Complete Assignment",
+  "description": "Finish the To Do list API and write documentation",
+  "status": "completed"
+}
+
+}
+```
+
+#### Response Body
+
+
+```json
+{
+  "message": "Task updated successfully"
+}
+```
+
+
 ### Delete a Task
 
 - **URL**: `/api/students/:id`
@@ -140,7 +169,7 @@ Before running the application, make sure you have the following installed on yo
 
 ```json
 {
-  "message": "Student deleted successfully"
+  "message": "Task deleted successfully"
 }
 ```
 
